@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+  <title>Guessing Game</title>
+</head>
+<body>  
+  <div>
+    <h1>Guessing Game</h1>
+    <p>Let's guess the number!<br>The first player sets up the NUMBER which is gonna be hidden, <br>and the second player guesses it.</p>
+  </div>
+  
+  <br>
+  <div id="game-container">
+    <div>
+      <p>Put the number here.</p>
+      <input id="target-number">
+      <button type="submit" onclick="setNumber()" id="target-btn" value="input">Set Number</button>
+    </div>
+    <div>
+      <p>What is your number?</p>
+      <input id="guessed-number" type="text">
+      <button type="submit" onclick="checkNumber()" id="check-btn" value="input">Check</button>
+    </div>
+    <div id="display-message">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
